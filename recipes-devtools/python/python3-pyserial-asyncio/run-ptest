@@ -1,0 +1,9 @@
+#!/bin/sh
+
+python3 -m unittest discover -s tests/ > /dev/null 2>&1
+
+if [ $? -ne 0 ]; then
+    echo "FAIL: python3-pyserial-asyncio
+else
+    echo "PASS: python3-pyserial-asyncio
+fi
