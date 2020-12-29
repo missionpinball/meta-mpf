@@ -6,4 +6,5 @@ LICENSE = "MIT"
 
 inherit core-image
 
-CORE_IMAGE_EXTRA_INSTALL = "python python-datetime python-io python-core python-misc python-pygame python-pypinproc"
+CORE_IMAGE_EXTRA_INSTALL += " python python-datetime python-io python-core python-misc python-pygame python-pypinproc python-pyyaml python-imaging"
+

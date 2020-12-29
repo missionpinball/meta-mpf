@@ -2,6 +2,8 @@ DESCRIPTION = "Protocol Buffers"
 HOMEPAGE = "https://developers.google.com/protocol-buffers/"
 SECTION = "devel/python"
 
+PYPI_PACKAGE = "protobuf"
+
 LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://PKG-INFO;beginline=8;endline=8;md5=19e8f490f9526b1de84f8d949cfcfd4e"
 
@@ -31,8 +33,8 @@ RDEPENDS_${PN} += " \
 BBCLASSEXTEND = "native nativesdk"
 
 DEPENDS += "protobuf"
-DISTUTILS_BUILD_ARGS += "--cpp_implementation"
-DISTUTILS_INSTALL_ARGS += "--cpp_implementation"
+#DISTUTILS_BUILD_ARGS += "--cpp_implementation"
+#DISTUTILS_INSTALL_ARGS += "--cpp_implementation"
 
 do_compile_prepend_class-native () {
     export KOKORO_BUILD_NUMBER="1"
