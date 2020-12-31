@@ -1,0 +1,9 @@
+!/bin/sh
+# 
+# Start Game
+#
+
+# Set resolution
+xrandr -s 1024x768
+
+mpf both -t /game
