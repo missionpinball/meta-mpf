@@ -1,9 +1,3 @@
-SUMMARY = "MPF pygame/skeleton base image"
-
-# IMAGE_FEATURES += "splash"
-
-LICENSE = "MIT"
-
 inherit core-image features_check
 
 IMAGE_FEATURES += "splash"
