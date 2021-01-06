@@ -1,8 +1,6 @@
 SUMMARY = "YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order."
 AUTHOR = "Anthon van der Neut"
 
-PYPI_PACKAGE = "ruamel-yaml"
-
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=caf8bd842440b537c044e131785a4666"
 
