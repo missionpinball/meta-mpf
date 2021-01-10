@@ -6,4 +6,4 @@
 # Set resolution
 xrandr -s 1024x768
 
-mpf both -t /game
+cd /game/ && mpf both -t -X -c production.yaml > /var/log/game.log 2>&1
