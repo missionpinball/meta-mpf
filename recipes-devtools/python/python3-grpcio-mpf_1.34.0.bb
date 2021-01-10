@@ -8,8 +8,8 @@ PYPI_PACKAGE = "grpcio"
 
 DEPENDS += "${PYTHON_PN}-protobuf-mpf"
 
-#SRC_URI += "file://0001-setup.py-Do-not-mix-C-and-C-compiler-options.patch"
-#SRC_URI_append_class-target = " file://ppc-boringssl-support.patch \
+SRC_URI += "file://0001-setup.py-Do-not-mix-C-and-C-compiler-options.patch"
+# SRC_URI_append_class-target = " file://ppc-boringssl-support.patch \
 #                                file://riscv64_support.patch \
 #                                file://0001-Fix-build-on-riscv32.patch \
 #"
@@ -26,7 +26,7 @@ inherit setuptools3
 inherit pypi
 
 export GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY = "1"
-export GRPC_PYTHON_LDFLAGS = " -lpthread -Wl,-wrap,memcpy -static-libgcc"
+#export GRPC_PYTHON_LDFLAGS = " -lpthread -Wl,-wrap,memcpy -static-libgcc"
 
 do_compile_prepend_toolchain-clang() {
     export GRPC_PYTHON_CFLAGS='-fvisibility=hidden -fno-wrapv -fno-exceptions'
